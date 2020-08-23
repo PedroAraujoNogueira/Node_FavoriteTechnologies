@@ -1,0 +1,18 @@
+1. Sequelize é um ORM para NodeJS para banco de dados relacionais(bancos de dados SQL).
+
+2. Características de um ORM:
+2.1. Abstração do banco de dados, ou seja, muda a forma como nossa aplicação se comunica/manipula o banco de dados, pois na maioria das vezes não usaremos mais código SQL para manipular nosso banco de dados, usaremos código JavaScript para essa manipulação, seja para criação ou remoção de linhas ou atualização e consulta de dados. 
+2.2. Tabelas viram Models, que são arquivos da nossa aplicação que símbolizam as tabelas. Ou seja, um arquivo User.js vai representar a tabela "user" do nosso banco de dados.
+
+3. Vantagens de um ORM:
+3.1. Sintaxe reduzida.
+3.2. Sintaxe compatível com vários bancos de dados diferentes. Ou seja, podemos trocar nosso banco de Postgres para MySQL e tudo irá continuar funcionando da mesma forma na nossa aplicação.
+
+4. Com a utilização de um ORM ganhamos mais uma funcionalidade fantástica, que são as Migrations.
+4.1. Migrations são um controle de versão para a base de dados. 
+4.2. Cada arquivo de Migração contém instuções para criação, alteração ou remoção de tabelas ou colunas.
+4.3. As Migrations mantém a base de dados atualizada entre todos os desenvolvedores do time e também no ambiente de produção.
+4.4. As Migrations são ordenadas por data. Ou seja, a tabela que vai ser criada por uma Migration não pode depender de outra tabela que vai ser criada por uma Migration futura.
+4.5. A partir do momento que uma Migration já foi pra produção ou já está sendo usada por outros desenvolvedores nós não podemos editar essa Migration. 
+4.6. Se precisarmos adicionar um novo campo nessa tabela ou mudarmos um campo que já existe na tabela ou deletar um campo da tabela ou qualquer outra alteração na tabela então devemos criar uma nova Migration adicionando(ou deletando ou alterando e etc) somente o campo que queremos. 
+4.7. Cada Migration deve realizar alterações em apenas uma tabela.

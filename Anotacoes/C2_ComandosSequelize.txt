@@ -1,0 +1,7 @@
+1. Para ver os comandos disponíveis pelo sequelize escreva: yarn sequelize --help
+
+2. yarn sequelize db:create, cria um banco de dados com o nome que definimos no arquivo 'database'.
+
+3. yarn sequelize migration:create --name=create-users, a flag --name define o nome da migration.
+
+4. yarn sequelize db:migrate, cria a tabela conforme especificado nas migrations.

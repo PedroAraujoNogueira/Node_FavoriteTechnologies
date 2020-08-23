@@ -1,0 +1,14 @@
+-> Documentação: https://sequelize.org/
+
+1. Adicione o Sequelize usando:
+yarn add sequelize
+
+2. Adicione tambem o: "yarn add sequelize-cli -D" que é uma interface de linha de comando com alguns comandos que poderemos executar através do terminal para facilitar a criação de migrations, criação de models e etc.     
+
+3. Crie um arquivo .sequelizerc que vai ser o arquivo que irá exportar os caminhos aonde estão os arquivos e pastas necessários para integrações e configurações do banco de dados.
+OBS: o arquivo .sequelizerc não suporta o formato import/export.
+
+4. Adicione as bibliotecas: yarn add pg e yarn add pg-hstore.
+OBS: Essas bibliotecas irão mudar dependendo do banco que você escolher para sua aplicação, olhe na documentação do sequelize as bibliotecas de acordo com o banco que você escolher.
+
+5. Para ver os comandos disponíveis pelo sequelize escreva: yarn sequelize --help
