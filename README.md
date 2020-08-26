@@ -4,7 +4,7 @@ Como executar o projeto:
 -> Digite no terminal yarn dev para executar o projeto com o nodemon.
 
 Descrição do projeto:
-O projeto, feito com Node, utiliza o ORM Sequelize a biblioteca do Express e O banco Postgres.
+O projeto, feito com Node, utiliza o ORM Sequelize a biblioteca do Express e O banco Postgres. Nesse projeto é explorado a construção de relacionamentos de muitos para muitos N:N, a construção de Querys das mais variadas formas e as formas de se usar o Sequelize de maneira mais produtiva.
 
 Requisitos de software e bibliotecas:
 -> Insominia ou Postman (Para testar as requisições). OBS: o Insomnia so funciona para sistemas 64bits.

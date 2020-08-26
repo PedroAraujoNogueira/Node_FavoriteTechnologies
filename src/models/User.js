@@ -10,8 +10,12 @@ class User extends Model {
             // Esse objeto vai receber a configuração com o banco de dados.
             sequelize
         })
-
     }
+
+    static associate(models){
+        this.hasMany(models.Address, { foreignKey: 'user_id', as: 'addresses' }) // Aqui estamos dizendo que um usuário pode ter vários endereços.
+    } 
+
 }
 
 module.exports = User
