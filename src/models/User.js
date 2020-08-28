@@ -14,6 +14,7 @@ class User extends Model {
 
     static associate(models){
         this.hasMany(models.Address, { foreignKey: 'user_id', as: 'addresses' }) // Aqui estamos dizendo que um usuário pode ter vários endereços.
+        this.belongsToMany(models.Tech, { foreignKey: 'user_id', through: 'user_techs', as: 'techs' })
     } 
 
 }

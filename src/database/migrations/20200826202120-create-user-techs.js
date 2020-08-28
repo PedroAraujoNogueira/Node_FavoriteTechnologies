@@ -9,13 +9,19 @@ module.exports = {
         autoIncrement: true,
         allowNull: false
       },
-      name: {
-        type: Sequelize.STRING,
-        allowNull: false
+      user_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: { model: 'users', key: 'id'},
+        onUpdate: 'CASCADE', 
+        onDelete: 'CASCADE' 
       },
-      email: {
-        type: Sequelize.STRING,
-        allowNull: false
+      techs_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: { model: 'techs', key: 'id'},
+        onUpdate: 'CASCADE', 
+        onDelete: 'CASCADE' 
       },
       created_at: {
         type: Sequelize.DATE,
