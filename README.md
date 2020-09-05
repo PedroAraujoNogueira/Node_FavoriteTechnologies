@@ -1,7 +1,8 @@
 # Projeto tecnologias favoritas.
 ### Como executar o projeto:
--> Digito no terminal o comando **yarn add** para baixar todas as dependências do projeto.  
--> Digite no terminal **yarn dev** para executar o projeto com o nodemon.    
+-> Digito no terminal o comando **yarn install** para baixar todas as dependências do projeto.  
+-> Digite no terminal **yarn dev** para executar o projeto com o nodemon.
+-> Altere o arquivo src/config/database.js de acordo com sua conexão com o banco de dados e deixe seu banco de dados ativo.  
 
 ### Descrição do projeto:
 O projeto, feito com Node, utiliza o ORM Sequelize, a biblioteca do Express e o banco Postgres. Nesse projeto é explorado a construção de relacionamentos de muitos para muitos N:N, a construção de Querys das mais variadas formas e as formas de se usar o Sequelize de maneira mais produtiva. Nesse projeto é feito cadastro de usuários, cadastro de endereços do usuário e cadastro de tecnologias usadas pelo usuário.     
