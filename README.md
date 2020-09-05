@@ -1,7 +1,7 @@
 # Projeto tecnologias favoritas.
 ### Como executar o projeto:
 -> Digito no terminal o comando **yarn install** para baixar todas as dependências do projeto.  
--> Digite no terminal **yarn dev** para executar o projeto com o nodemon.
+-> Digite no terminal **yarn dev** para executar o projeto com o nodemon.  
 -> Altere o arquivo src/config/database.js de acordo com sua conexão com o banco de dados e deixe seu banco de dados ativo.  
 
 ### Descrição do projeto:
